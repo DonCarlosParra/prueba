@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+/*asd */
+.btn-naranja {
+    color: #ffffff;
+    background: #ef6603;
+    border: 0;
+    padding: 5px 10px;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+/*asd */
+/* Estilos para la navbar */
+.navbar {
+    /* background-color: #303242 !important; Color oscuro inicial */
+    transition: background-color 0.5s ease; /* Transición suave */
+}
+#navbar.scrolled {
+    background-color:  rgba(42, 44, 57, 0.8) !important; /* Color oscuro y transparente */
+}
+#navbar.scrolled a {
+    color: #ffffff;
+}
+
+.navbar a {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.carri {
+    height: 300px;
+}
+
+.navbar .logo img {
+    max-height: 80px;
+    margin-left: 20px;
+    /* margin-right: 8px; */
+}
+
+/*
+/* Ajuste de altura para el carrusel */
+.carousel-inner {
+    height: 75vh; /* 3/4 de la altura de la ventana */
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+}
+
+/* Ajustes para el texto del carrusel */
+.carousel-caption {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 767px) {
+    .carousel-caption {
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+        width: 100%;
+    }
+}
+*/
+/* .carousel-item {
+    min-height: 400px;
+}
+
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
+
+.carousel-caption h5 {
+    font-size: 70px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+.carousel-caption p {
+    width: 60%;
+    margin: 10px auto;
+    font-size: 18px;
+}
+
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+} */
+
+.services {
+    padding: 80px 0;
+}
+
+.bg-car1 {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/bedcovers.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-car2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/steps_home.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-car3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/power_steps.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-car4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/RACK.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-car5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/BEDLINER.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-car6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/ROOF.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.bg-max1 {
+    background-image: url(img/maxtruck.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-max2 {
+    background-image: url(img/maxtruck2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-max3 {
+    background-image: url(img/maxtruck3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-max4 {
+    background-image: url(img/maxtruck4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.bg-max5 {
+    background-image: url(img/maxtruck5.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-max6 {
+    background-image: url(img/maxtruck6.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-icons i {
+    font-size: 40px;
+}
+
+.box-icons h3 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.product {
+    padding: 80px 0;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+}
+
+.banner {
+    padding: 50px 0;
+    margin-bottom: 80px;
+    background-color: #EAE5DF;
+}
+
+.banner h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.banner img {
+    width: 300px;
+}
+
+
+@media(max-width: 767px) {
+    .carousel-item {
+        min-height: 500px;
+    }
+
+    .carousel-item img {
+        height: 500px;
+    }
+
+    .carousel-caption {
+        bottom: 30px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 50px;
+        margin-top: 0;
+    }
+
+    .carousel-caption p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .services {
+        padding: 30px 0;
+    }
+
+    .products {
+        padding: 30px 0 0 0;
+
+    }
+
+    .banner {
+        margin-bottom: 30px;
+    }
+
+}
