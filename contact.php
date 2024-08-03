@@ -1,69 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<?php include('head.php'); ?>
+<?php include('data_sesion.php'); ?>
 <style>
-    .dropdown-menu .dropdown-item:hover {
-        background-color: blue;
-        /* Cambia el color aquí */
-        color: #fff;
-    }
-
-
-
-    .navbar-nav .nav-link {
-        font-size: 2em;
-        /* Cambia el tamaño de la fuente aquí */
-        margin-right: 15px;
-        /* Espacio a la derecha de cada elemento del menú desplegable */
-        margin-left: 15px;
+    .contact-item {
         display: flex;
         align-items: center;
-        gap: 5px;
+        margin-bottom: 20px;
     }
 
-    .dropdown-menu .dropdown-item {
-        font-size: 2em;
-        /* Cambia el tamaño de la fuente aquí */
+    .contact-icon {
+        flex: 0 0 auto;
+        margin-right: 10px;
     }
 
-    .dropdown-menu.show {
-        display: block;
+    .contact-icon img {
+        width: 35px;
+        /* Ajusta el tamaño del icono según sea necesario */
+        height: auto;
     }
 
-
-    .nav-link i {
-        font-size: 2em;
-        /* Adjust the size of the icon */
-        color: #25D366;
-        /* Green color for WhatsApp icon */
-        margin-right: 5px;
-        /* Space between the icon and text */
+    .contact-info {
+        flex: 1 1 auto;
     }
 
-    .whatsapp-link {
-        font-size: 2em;
-        /* Adjust the size of the text */
-    }
-
-    .nav-link i:hover {
-        color: #128C7E;
-        /* Darker green on hover */
-    }
-
-    .nav-link {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-    }
-
-
-
+   
 
     .map-responsive {
         overflow: hidden;
-        padding-bottom: 56.25%;
-        /* Proporción 16:9 */
+        padding-bottom: 40%;
+        /* Ajusta este valor según el tamaño deseado del mapa */
         position: relative;
         height: 0;
+        margin-bottom: 20px;
+        /* Añade un margen inferior para el espacio antes del footer */
     }
 
     .map-responsive iframe {
@@ -75,49 +46,55 @@
     }
 </style>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autopartes</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-
-</head>
-
 <body>
     <?php include('menu.php'); ?>
-
-    <br>
+    <section id="contact" class="about section" style="margin-top: 100px;">
+        <div class="container section-title">
+            <center>
+                <h2><?php echo $lang['contact_title']; ?></h2>
+                <p><?php echo $lang['contact_subtitle']; ?></p>
+            </center>
+        </div>
+    </section>
     <div class="container mt-5">
-        <h1 class="text-center mb-4">Contact</h1>
         <div class="row">
-            <div class="col-md-4">
-                <h3>Email</h3>
-                <p> info@empresa.com</p>
+            <div class="col-md-4 contact-item">
+                <div class="contact-icon">
+                    <img src="img/email.png" alt="Email Icon">
+                </div>
+                <div class="contact-info">
+                    <h3><?php echo $lang['contact_email_title']; ?></h3>
+                    <p><?php echo $lang['contact_email']; ?></p>
+                </div>
             </div>
-            <div class="col-md-4">
-                <h3>Call</h3>
-                <p>(520) 620 0570</p>
-
+            <div class="col-md-4 contact-item">
+                <div class="contact-icon">
+                    <img src="img/phone.png" alt="Phone Icon">
+                </div>
+                <div class="contact-info">
+                    <h3><?php echo $lang['contact_phone_title']; ?></h3>
+                    <p><?php echo $lang['contact_phone']; ?></p>
+                </div>
             </div>
-
-            <div class="col-md-4">
-                <h3>Adress</h3>
-                <p>4535 S 12th Ave Tucson , AZ</p>
-
+            <div class="col-md-4 contact-item">
+                <div class="contact-icon">
+                    <img src="img/mapa.png" alt="Address Icon">
+                </div>
+                <div class="contact-info">
+                    <h3><?php echo $lang['contact_address_title']; ?></h3>
+                    <p><?php echo $lang['contact_address']; ?></p>
+                </div>
             </div>
         </div>
         <hr>
-        <h3 class="mt-4">LOCATION:</h3>
+        <h3 class="mt-4"><?php echo $lang['contact_location_title']; ?></h3>
         <div class="map-responsive">
-            <!-- Reemplaza la URL del mapa con el mapa de tu ubicación -->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3377.297838371218!2d-110.97964362385356!3d32.169242314796904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d67a0d0b7dfa3b%3A0xda85ea96a0b7cab!2s4535%20S%2012th%20Ave%2C%20Tucson%2C%20AZ%2085714%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1718657469972!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 
+
+    <?php include('celcular.php'); ?>
     <?php include('footer.php'); ?>
 
 
@@ -128,41 +105,15 @@
 </html>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        let dropdownLink = document.querySelectorAll(".nav-link.dropdown-toggle");
-
-        dropdownLink.forEach(function(element) {
-            let dropdownMenu = element.nextElementSibling;
-
-            element.addEventListener("mouseover", function() {
-                dropdownMenu.classList.add("show");
-                this.parentNode.classList.add("show");
-            });
-
-            element.addEventListener("mouseout", function() {
-                dropdownMenu.classList.remove("show");
-                this.parentNode.classList.remove("show");
-            });
-
-            dropdownMenu.addEventListener("mouseover", function() {
-                this.classList.add("show");
-                this.parentNode.classList.add("show");
-            });
-
-            dropdownMenu.addEventListener("mouseout", function() {
-                this.classList.remove("show");
-                this.parentNode.classList.remove("show");
-            });
+    document.addEventListener('DOMContentLoaded', function() {
+        var navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
         });
-
-
-        // Inicializar el carrusel
-        $('#carouselE1').carousel();
-
-        // Avanzar automáticamente cada 3 segundos
-        setInterval(function() {
-            $('#carouselE1').carousel('next');
-        }, 3000); // 3000 milisegundos = 3 segundos
     });
 </script>
 </script>

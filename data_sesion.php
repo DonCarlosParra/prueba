@@ -16,8 +16,8 @@ if (isset($_GET['lang'])) {
 }
 
 if ($_SESSION['lang'] == 'es') {
-    include('../auto-partes/assets/lenguages/es.php');
+    include('lenguages/es.php');
 } else {
-    include('../auto-partes/assets/lenguages/en.php');
+    include('lenguages/en.php');
 }
 ?>

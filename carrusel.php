@@ -1,4 +1,4 @@
-<section>
+<section class="mb-3">
     <!--Carousel Indicators-->
     <div id="carouselE1" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -10,37 +10,37 @@
 
         <!--Carousel Inner (Items)-->
         <div class="carousel-inner">
-            <div class="carousel-item active carri">
+            <div class="carousel-item active">
                 <img src="img/car7.jpg" class="d-block w-100" alt="">
                 <div class="carousel-caption">
-                    <h5>IN STOCK AT ALL TIMES</h5>
-                    <p>We ensure that this product is consistently available. You can rely on us to have it in stock at all times, ready for immediate purchase or shipment.</p>
+                    <h5><?php echo $lang['carousel_slide_1_title']; ?></h5>
+                    <p><?php echo $lang['carousel_slide_1_text']; ?></p>
                 </div>
             </div>
-            <div class="carousel-item carri">
+            <div class="carousel-item">
                 <img src="img/car1.jpg" class="d-block w-100" alt="">
                 <div class="carousel-caption">
-                    <h5>QUICK AND SECURE INSTALLATION</h5>
-                    <p>Count on us for fast, efficient, and reliable service to meet your needs without delay.</p>
+                    <h5><?php echo $lang['carousel_slide_2_title']; ?></h5>
+                    <p><?php echo $lang['carousel_slide_2_text']; ?></p>
                 </div>
             </div>
-            <div class="carousel-item carri">
+            <div class="carousel-item">
                 <img src="img/car3.jpg" class="d-block w-100" alt="">
                 <div class="carousel-caption">
-                    <h5>THE BEST BRANDS</h5>
-                    <p>We offer only the best brands, ensuring top-quality products that meet the highest standards. Trust us to provide you with reliable and premium options to suit your needs.</p>
+                    <h5><?php echo $lang['carousel_slide_3_title']; ?></h5>
+                    <p><?php echo $lang['carousel_slide_3_text']; ?></p>
                 </div>
             </div>
-            <div class="carousel-item carri">
+            <div class="carousel-item">
                 <img src="img/carr5.jpg" class="d-block w-100" alt="">
                 <div class="carousel-caption">
-                    <h5>EXCEPTIONAL QUALITY AND PERFORMANCE</h5>
-                    <p>We take pride in offering products from the best brands, ensuring exceptional quality and performance. You can rely on us for premium, reliable options that meet your needs and exceed your expectations.</p>
+                    <h5><?php echo $lang['carousel_slide_4_title']; ?></h5>
+                    <p><?php echo $lang['carousel_slide_4_text']; ?></p>
                 </div>
             </div>
         </div>
 
-        <!--Botones Carousel-->
+        <!--Carousel Controls-->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselE1" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>

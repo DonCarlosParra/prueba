@@ -1,32 +1,26 @@
-<!-- Footer-->
-
-<footer class="footer  bg-dark text-white bg-dark p-2 text-center">
+<footer class="footer bg-dark text-white p-2 text-center">
     <div class="container">
-        <p class="text-white">All Rights Reserved</p>
-        <div class="d-flex justify-content-around align-items-center">
-            <div class="footer-info text-white">
-                <h4>Business Hours</h4>
-                <p>Monday to Friday: 9:00 am - 18:00 pm</p>
-                <p>Saturdays: 9:00 am - 15:00 pm</p>
-                <p>Sundays: Closed</p>
+        <p class="text-white mb-3"><?php echo $lang['footer_all_rights']; ?></p>
+        <div class="row">
+            <div class="col-md-4 footer-info text-white mb-3">
+                <h4><?php echo $lang['footer_hours_title']; ?></h4>
+                <p><?php echo $lang['footer_hours_weekdays']; ?></p>
+                <p><?php echo $lang['footer_hours_saturday']; ?></p>
+                <p><?php echo $lang['footer_hours_sunday']; ?></p>
             </div>
-            <div class="footer-info text-white">
-                <h4>Address</h4>
-                <p>4535 S 12th Ave Tucson , AZ</p>
+            <div class="col-md-4 footer-info text-white mb-3">
+                <h4><?php echo $lang['footer_address_title']; ?></h4>
+                <p><?php echo $lang['footer_address']; ?></p>
             </div>
-            <div class="footer-info text-white">
-                <h4>Call</h4>
-                <p>(520) 620 0570</p>
-
+            <div class="col-md-4 footer-info text-white mb-3">
+                <h4><?php echo $lang['footer_call_title']; ?></h4>
+                <p><?php echo $lang['footer_call']; ?></p>
             </div>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/maxtruckdep" target="_blank" class="text-white fs-2 mx-3"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/maxtruckdep" target="_blank" class="text-white fs-2 mx-3"><i class="fab fa-instagram"></i></a>
-                <a href="#" target="_blank" class="text-white fs-2 mx-3"><i class="fab fa-twitter"></i></a>
-            </div>
-
-
+        </div>
+        <div class="d-flex justify-content-center mb-3">
+            <a href="https://www.facebook.com/maxtruckdep" target="_blank" class="text-white fs-4 mx-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/maxtruckdep" target="_blank" class="text-white fs-4 mx-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank" class="text-white fs-4 mx-3"><i class="fab fa-twitter"></i></a>
         </div>
     </div>
-
 </footer>
